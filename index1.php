@@ -38,6 +38,7 @@
             <th>Book image</th>
 
             <th>Published year</th>
+            <!-- <th>Delete Books</th> -->
             </tr>
             <?php foreach ($data as $row): ?>
              <tr>
@@ -46,6 +47,9 @@
              <td> <?php echo $row['author_name'];?></td>
              <td> <img src="./image/<?php echo $row['book_image'];?>" height="50px" width="50px"></td>
              <td> <?php echo $row['published_year'];?></td>
+             <td><form action="deleteredirect.php" method="POST">
+            <button value="<?php echo  $row['book_id'];?>" name='book_id'>Delete</button>
+            </form></td>
             </tr>
             <?php endforeach; ?>
             </table>

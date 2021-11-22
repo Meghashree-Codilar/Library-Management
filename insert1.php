@@ -13,7 +13,7 @@
 			$published_year=$_POST['published'];
 			$sql="INSERT INTO book_info VALUES ('$book_id','$book_name','$author_name','$book_image','$published_year')";
 			$con= $this->conn;
-			$con->exec($sql);
+			
 			
 			if($con->exec($sql)==TRUE) {
 				header('Location: index1.php');

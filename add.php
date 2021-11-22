@@ -14,7 +14,7 @@
 <body>
     <div>
     <form action="validateredirect.php" method="POST">
-        <label>Pincode:</label>
+        <label>Passcode:</label>
             <input type="number" name= "pincode">
     </div>
     <div>
