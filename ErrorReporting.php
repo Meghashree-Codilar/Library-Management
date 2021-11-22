@@ -12,7 +12,7 @@ class ErrorReporting
     {
         if ($isEnabled === true) {
             error_reporting(E_ALL);
-            ini_set('display_error', true);
+            ini_set('display_errors', true);
         } else {
             error_reporting(0);
             ini_set('display_errors', false);
