@@ -1,5 +1,6 @@
 <?php
 	ini_set('display_errors', true);
+    require_once __DIR__ .'/sessioncheck.php';
 	require_once __DIR__ .'/include.php';
 	$display = new Display();
 	$data = $display->displayBook();
@@ -24,6 +25,9 @@
 <body>
 <form action="add.php" method="POST">
   <input type="submit" value="ADD BOOKS">
+</form><br>
+<form action="signinlogout.php" method="POST">
+    <button value="signinlogout" name="signinlogout">Logout</button>
 </form><br>
         <table border='2'>
 
