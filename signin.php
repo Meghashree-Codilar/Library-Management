@@ -30,5 +30,6 @@
             </table>
     </form>
     <a href="signup.php">Register</a>
+    <a href="passwordchange.php">Change Password</a>
 </body>
 </html>

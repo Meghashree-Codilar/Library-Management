@@ -1,13 +1,14 @@
 <?php
+	require_once __DIR__ .'/sessioncheck.php';
 	class Display extends Dbconnection
     {
         public function displayBook() {
-	  
-	        $stmt = $this->conn->prepare("select  *  from book_info");
+			$email=$_SESSION['email'];
+	        $stmt = $this->conn->prepare("SELECT * from book_info WHERE author_name='$email'");
 	        $stmt->execute();
 	        $arrays = $stmt->fetchAll(PDO::FETCH_ASSOC);
 	        
-	        return $arrays;
+	        return $arrays;require_once __DIR__ .'/insert1.php';
 		}
 		
     }

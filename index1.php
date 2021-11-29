@@ -10,6 +10,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <style>
         body{
             background-color:pink;
@@ -17,6 +18,14 @@
         input[type=text] {
         width: 100%;
         padding: 14px 20px;
+        }
+        .profile-img{
+            border-radius:50%;
+            position: absolute;
+            right:10px;
+            top:10px;
+            height:70px;
+            width:70px;
         }
     </style>
 
@@ -26,6 +35,7 @@
 <form action="add.php" method="POST">
   <input type="submit" value="ADD BOOKS">
 </form><br>
+  <!-- <img src="profile.jpeg" alt="Avatar" class="profile-img"> -->
 <form action="signinlogout.php" method="POST">
     <button value="signinlogout" name="signinlogout">Logout</button>
 </form><br>
